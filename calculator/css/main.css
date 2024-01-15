@@ -12,6 +12,8 @@ body {
   background: linear-gradient(180deg, #06c2c8 0%, #000000 100%);
 }
 
+/* === calc wrapper === */
+
 #calculator {
   max-width: 31.25rem;
   max-height: 75%;
@@ -37,6 +39,8 @@ body {
   border: 1px solid #eeeeee;
 }
 
+/* === keys wrapper === */
+
 #keys {
   width: 100%;
   display: grid;
@@ -44,6 +48,8 @@ body {
   grid-gap: 0.625rem;
   margin-top: 1.2rem;
 }
+
+/* === all keys === */
 
 button {
   border-radius: 50px;
@@ -80,6 +86,8 @@ button:active {
   transition: all 0.2s;
 }
 
+/* === Clear key === */
+
 .clear {
   background: linear-gradient(180deg, #d1d1d1 0%, #ffffff 100%);
   color: #333333;
@@ -109,6 +117,8 @@ button:active {
   color: #ffffff;
 }
 
+/* === Equals key === */
+
 .answer {
   background: linear-gradient(180deg, #a6a6a6 0%, #ffffff 100%);
   color: #333333;
@@ -124,4 +134,33 @@ button:active {
   background-color: limegreen;
   transform: scale(1.125);
   transition: all 0.2s ease;
+}
+
+/* === footer === */
+
+footer {
+  background: transparent;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 0.9rem;
+  font-weight: 500;
+
+  position: absolute;
+  bottom: 0.5rem;
+
+  p > a {
+    text-decoration: none;
+    color: white;
+    transition: all 500ms ease;
+  }
+
+  a:hover {
+    color: lime;
+    text-decoration: underline;
+    transform: translateY(-20px);
+    transition: all 200ms ease;
+  }
 }
