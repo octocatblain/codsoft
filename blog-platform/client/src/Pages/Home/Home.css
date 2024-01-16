@@ -1,0 +1,5 @@
+.home__wrapper {
+  display: flex;
+  margin-inline: 3.125rem;
+  padding-block: 3.125rem;
+}

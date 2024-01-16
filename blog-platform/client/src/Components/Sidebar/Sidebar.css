@@ -1,0 +1,59 @@
+.sidebar {
+  flex: 3;
+  row-gap: 3.125rem;
+}
+
+.sidebarItem {
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidebar__title {
+  font-size: 1.2rem;
+  margin-block: 1rem;
+  padding-block: 0.4rem;
+  width: 50%;
+  text-align: center;
+  border-block: 2px solid var(--secondary-color);
+}
+
+.sidebar__about__img {
+  width: 150px;
+  height: 150px;
+
+  border-radius: 50%;
+  align-items: center;
+}
+
+.sidebar__about {
+  padding: 1rem;
+  text-align: right;
+}
+
+.category__list {
+  display: inline-block;
+  align-items: center;
+  padding-left: 5rem;
+}
+
+.category__name {
+  display: inline-block;
+  width: 50%;
+  margin-block: 0.5rem;
+}
+
+.sidebar__socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.6rem;
+
+  img {
+    width: 1.5rem;
+    height: 1.5rem;
+    cursor: pointer;
+  }
+}

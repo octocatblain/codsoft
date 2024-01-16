@@ -1,5 +1,9 @@
 .hero {
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
 
   .hero-img {
     background: url("../../Assets/images/HeroImages/hero-1.jpg");
@@ -18,10 +22,18 @@
   .hero-content {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     color: var(--secondary-color);
+    padding-inline: 6.25rem;
     position: absolute;
     z-index: 2;
+    font-weight: 100;
+    filter: brightness(0.9);
+
+    h1 {
+      font-size: 6rem !important;
+      font-weight: 100;
+    }
   }
 }
