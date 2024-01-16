@@ -4,7 +4,7 @@
 
 #### A project task for the [Codsoft](https://codsoft.in) Internship
 
-[Version 0.1](https://codsoft-calculator-blain.vercel.app) &#x2021; [React Version 0.1]()
+[Version 0.1](https://codsoft-calculator-blain.vercel.app) &#x2022; [React Version 0.1]()
 
 </div>
 
