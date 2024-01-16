@@ -2,7 +2,7 @@
 
 # 🛠️Calculator Application
 
-<button style="background-color: limegreen; color: white; border-radius: 5px; padding: 0.5rem 5%; border:2px solid lime; "><a href="" style=" color: white;  font-weight: 700;  text-shadow: 0px 0px 10px darkgreen">v.1</a></button>
+<button style="background-color: limegreen; color: white; border-radius: 5px; padding: 0.5rem 5%; border:2px solid lime; "><a href="" style=" color: white;  font-weight: 700;  text-shadow: 0px 0px 10px darkgreen">version 0.1</a></button>
 
 #### A project task for the [Codsoft](https://codsoft.in) Internship
 
@@ -18,6 +18,12 @@ This is a basic calculator app that users can perform basic math calculations in
 - CSS3
 - JavaScript
 
-## Author
+## 📌Known Issues
+
+- [ ] Add history tab
+- [ ] Add percentage input key
+- [ ] Add delete key
+
+## 👨‍💻Author
 
 - Blain Muema &mdash; [Twitter](https://twitter.com/birdblain) / [Email](mailto:blainmuema@gmail.com)
