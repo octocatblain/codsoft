@@ -23,6 +23,8 @@
     object-position: center;
     border-radius: .5rem;
 
+    transition: all 500ms ease;
+
 }
 
 .write_form_group {
@@ -34,7 +36,8 @@
 
 .add_post_image {
     padding: .5rem;
-    color: var(--secondary-color);
+    font-weight: 600;
+    color: var(--primary-color);
     background: radial-gradient(limegreen, black);
     border: 2px solid lime;
     border-radius: .2rem;
@@ -89,4 +92,12 @@
     position: absolute;
     top: 23.75rem;
     right: 3rem;
+
+    transition: all 500ms ease;
+}
+
+..add_post_image:hover,
+.publish_btn:hover{
+    scale: 1.1;
+    transition: all 200ms ease;
 }
