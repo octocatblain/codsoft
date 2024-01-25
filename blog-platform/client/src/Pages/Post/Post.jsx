@@ -12,8 +12,8 @@ const Post = () => {
                 </div>
                 <h2 className="post_title">Tempore, libero?</h2>
                 <div className="post_data">
-                    <p className="post_author">Blain Muema</p>
-                    <p className="post_date">2 hours ago</p>
+                    <p className="post_author">Blain Muema </p>{"  "}&mdash;{"  "}
+                    <p className="post_date"> 2 hours ago</p>
                 </div>
                 <p className="post_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias quam facilis voluptate consequuntur doloremque quas quod ducimus deleniti rem esse, maxime laudantium quisquam nulla, maiores voluptatibus, officia nesciunt.</p>
             </div>
