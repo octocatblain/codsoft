@@ -8,7 +8,7 @@ const Settings = () => {
       <div className="setings_wrapper">
         <h4 className="settings_title">
           <span>Update Your Details</span>
-          <span>Delete Your Account</span>
+          <span>Delete Account</span>
         </h4>
         <form action="" className="settings_form">
           <div className="profile_image_section">

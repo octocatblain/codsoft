@@ -17,9 +17,19 @@
     padding-block-end: 2rem;
 
     >span:last-child {
-        text-shadow: 0 0 10px red;
+        text-shadow: none;
+        color: red;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: all 500ms ease;
+    }
+
+    >span:last-child:hover{
+        scale: 1.1;
+        transition: all 200ms ease;
     }
 }
+
 
 .settings_form {
     display: flex;
