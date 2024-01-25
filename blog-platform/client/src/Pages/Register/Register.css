@@ -1,0 +1,82 @@
+.register_page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100dvh;
+    position: relative;
+    gap: 2rem;
+}
+
+.register_title {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.register_form {
+    display: flex;
+    flex-direction: column;
+    gap: .75rem;
+
+    label {
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+
+    input {
+        width: 32dvw;
+        outline: none;
+        border: none;
+        border-bottom: 2px solid green;
+        border-radius: .5rem;
+        color: var(--primary-color);
+        font-size: 1.2rem;
+        padding: .75rem;
+    }
+
+
+}
+
+.register_btn {
+    padding: .75rem;
+    border: 2px solid lightblue;
+    color: var(--primary-color);
+    width: 32dvw;
+    background-color: teal;
+    border-radius: .5rem;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: 550;
+    margin-block-start: 1rem;
+    transition: all 500ms ease;
+
+}
+
+.register_login_btn {
+    position: absolute;
+    top: 4.75rem;
+    right: 2rem;
+
+    padding: .75rem;
+    border: 2px solid lime;
+    color: var(--primary-color);
+    width: 10dvw;
+    background-color: green;
+    border-radius: .2rem;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: 550;
+    transition: all 500ms ease;
+}
+
+.register_btn:hover {
+    scale: 1.1;
+    box-shadow: 0 0 10px lightcyan;
+    transition: all 200ms ease;
+}
+
+.register_login_btn:hover {
+    scale: 1.1;
+    box-shadow: 0 0 10px var(--secondary-color);
+    transition: all 200ms ease;
+}
