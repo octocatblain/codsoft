@@ -22,9 +22,6 @@
     object-fit: cover;
     object-position: center;
     border-radius: .5rem;
-
-    transition: all 500ms ease;
-
 }
 
 .write_form_group {
@@ -43,6 +40,8 @@
     border-radius: .2rem;
     font-size: 1rem;
     cursor: pointer;
+
+    transition: all 500ms ease;
 }
 
 .add_post_title {
@@ -96,8 +95,9 @@
     transition: all 500ms ease;
 }
 
-..add_post_image:hover,
+.add_post_image:hover,
 .publish_btn:hover{
-    scale: 1.1;
+    /* scale: 1.1; */
+    transform: translateY(-.5rem);
     transition: all 200ms ease;
 }
