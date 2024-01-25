@@ -1,0 +1,104 @@
+.settings {
+    margin-block: 4rem;
+    margin-inline: 2rem;
+    display: flex;
+}
+
+.setings_wrapper {
+    flex: 9;
+
+}
+
+.settings_title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-shadow: 0 0 10px var(--secondary-color);
+    padding-block-end: 2rem;
+
+    >span:last-child {
+        text-shadow: 0 0 10px red;
+    }
+}
+
+.settings_form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+    padding: 2rem;
+}
+
+.profile_image_section {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
+    .person_image {
+        width: 9.375rem;
+        height: 9.375rem;
+        border-radius: 50%;
+    }
+
+    >label {
+        font-size: 1.2rem;
+        font-weight: 500;
+        color: var(--secondary-color);
+        cursor: pointer;
+        transition: all 500ms ease;
+
+    }
+
+    >label:hover {
+        scale: 1.1;
+        transition: all 200ms ease;
+    }
+}
+
+label {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+input {
+    outline: none;
+    border: 1px solid var(--tertiary-color);
+    border-radius: .2rem;
+    padding: .75rem;
+    width: 100%;
+    font-size: 1.2rem;
+}
+
+.name_section,
+.password_section {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+
+    >div {
+        flex: 6;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+}
+
+.save_details {
+    border: 2px solid var(--secondary-color);
+    border-radius: .5rem;
+    padding: .75rem;
+    font-size: 1.2rem;
+    font-weight: 550;
+    align-self: center;
+    background-color: green;
+    width: 25dvw;
+    transition: all 500ms ease;
+}
+
+.save_details:hover{
+    scale: 1.1;
+    transition: all 200ms ease;
+}
