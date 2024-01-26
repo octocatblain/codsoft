@@ -1,8 +1,10 @@
 import "./WritePost.css"
 import writeImage from "../../Assets/images/HeroImages/hero-4.jpg"
+import Layout from "../../Layout/Layout"
 
 const WritePost = () => {
     return (
+    <Layout>
         <div className="write_post">
             <form action="" className="write_form">
                 <img className="write_image" src={writeImage} alt="" srcset="" />
@@ -17,6 +19,7 @@ const WritePost = () => {
                 </div>
             </form>
         </div>
+    </Layout>
     )
 }
 

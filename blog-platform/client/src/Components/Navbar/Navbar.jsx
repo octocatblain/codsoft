@@ -7,6 +7,8 @@ import instagram from "../../Assets/icons/instagram.png";
 import github from "../../Assets/icons/github.png";
 import twitter from "../../Assets/icons/twitter.png";
 
+import { Link } from "react-router-dom";
+
 const Navbar = () => {
   return (
     <>
@@ -19,17 +21,17 @@ const Navbar = () => {
         </div>
         <div className="menu-links">
           <ul>
-            <li>HOME</li>
-            <li>ABOUT</li>
+            <li><Link to="/"> HOME</Link></li>
+            <li><Link to=""> ABOUT</Link></li>
 
-            <li>CONTACT</li>
-            <li>Write</li>
-            <li>Logout</li>
+            <li><Link to="/contact">CONTACT </Link></li>
+            <li><Link to="/write"> Write</Link></li>
+            <li><Link to="/logout"> Logout</Link></li>
           </ul>
         </div>
         <div className="menu-btns">
-          <img src={avatar} alt="" />
-          <button>LOGIN</button>
+          <Link to="/settings"><img src={avatar} alt="" /> </Link>
+          <button><Link to="/login"> LOGIN</Link></button>
           <button>Search</button>
         </div>
       </header>
