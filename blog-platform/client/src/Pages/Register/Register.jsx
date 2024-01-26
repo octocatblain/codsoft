@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import Layout from "../../Layout/Layout"
 import "./Register.css"
 
@@ -24,7 +25,7 @@ const Register = () => {
 
                     <button type="submit" className="register_btn">Register</button>
                 </form>
-                <button type="submit" className="register_login_btn">Login</button>
+                <Link to="/login"><button type="submit" className="register_login_btn">Login</button></Link>
             </div>
         </Layout>
     )
