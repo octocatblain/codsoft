@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import "./Navbar.css";
 import avatar from "../../Assets/images/person_4.jpg";
@@ -10,6 +10,9 @@ import twitter from "../../Assets/icons/twitter.png";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
+
+  const [menuItem, setMenuItem] = useState("home");
+
   return (
     <>
       <header>
@@ -21,12 +24,11 @@ const Navbar = () => {
         </div>
         <div className="menu-links">
           <ul>
-            <li><Link to="/"> HOME</Link></li>
-            <li><Link to=""> ABOUT</Link></li>
-
-            <li><Link to="/contact">CONTACT </Link></li>
-            <li><Link to="/write"> Write</Link></li>
-            <li><Link to="/logout"> Logout</Link></li>
+            <li onClick={() => { setMenuItem("home") }}><Link to="/"> HOME{menuItem === "home" ? <hr /> : <></>}</Link></li>
+            <li onClick={() => { setMenuItem("about") }}><Link to=""> ABOUT{menuItem === "about" ? <hr /> : <></>}</Link></li>
+            <li onClick={() => { setMenuItem("contact") }}><Link to="/contact">CONTACT {menuItem === "contact" ? <hr /> : <></>}</Link></li>
+            <li onClick={() => { setMenuItem("write") }}><Link to="/write"> Write{menuItem === "write" ? <hr /> : <></>}</Link></li>
+            <li onClick={() => { setMenuItem("logout") }}><Link to="/logout"> Logout{menuItem === "logout" ? <hr /> : <></>}</Link></li>
           </ul>
         </div>
         <div className="menu-btns">
