@@ -34,7 +34,7 @@ const Navbar = () => {
         <div className="menu-btns">
           <Link to="/settings"><img src={avatar} alt="" /> </Link>
           <button><Link to="/login"> LOGIN</Link></button>
-          <button>Search</button>
+          <i className="bi bi-search"></i>
         </div>
       </header>
     </>
