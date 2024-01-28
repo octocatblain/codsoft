@@ -11,8 +11,9 @@ const SinglePost = () => {
           <img className="single_post_image" src={postImage} alt="" srcset="" />
 
           <h1 className="single_post_title">Nihil asperiores similique harum. <div className="edit_btns">
-            <button className="edit_post">edit</button>
-            <button className="delete_post">delete</button>
+            
+            <i className="edit_post bi bi-pencil-square"></i>
+            <i className="delete_post bi bi-trash3"></i>
           </div></h1>
 
           <div className="single_post_data">
