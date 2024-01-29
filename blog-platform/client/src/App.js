@@ -8,49 +8,53 @@ import Settings from "./Pages/Settings/Settings";
 import SinglePost from "./Pages/SinglePage/SinglePost";
 import WritePost from "./Pages/WritePost/WritePost";
 
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 
 function App() {
 
   const user = false;
 
-  return (
-    // <Router>
-    //   <Navbar />
-    //   <Switch>
-    //     <Route path="/">
-    //       <Home />
-    //     </Route>
-    //     <Route path="/post/:postId">
-    //       <SinglePost />
-    //     </Route>
-    //     <Route path="/write">
-    //       {user ? <WritePost /> : <Register />}
-    //     </Route>
-    //     <Route path="/settings">
-    //       <Settings />
-    //     </Route>
-    //     <Route path="/login">
-    //       {user ? <Home /> : <Login />}
-    //     </Route>
-    //     <Route path="/register">
-    //       {user ? <Home /> : <Register />}
-    //     </Route>
-    //   </Switch>
-    // </Router>
-
-    <>
-      {/* <Navbar /> */}
-      {/* <Home /> */}
-      {/* <Home />
-      <SinglePost />
-      <WritePost />
-      <Settings />
-      <Login />
-      <Register />*/}
-      {/* <div>{children}</div> */}
-    </>
+  return (<BrowserRouter>
+    <Routes>
+      <Route
+        path="/"
+        element={<Home />}
+      />
+      <Route
+        path="/"
+        element={<Home />}
+      />
+      <Route
+        path="/about"
+        element={<ABout />}
+      />
+      <Route
+        path="/contact"
+        element={<Contact />}
+      />
+      <Route
+        path="/write"
+        element={user ? <Home/> : <WritePost />}
+      />
+      <Route
+        path="/post"
+        element={<SinglePost />}
+      />
+      <Route
+        path="/settings"
+        element={user ? <Home/> : <Settings />}
+      />
+      <Route
+        path="/login"
+        element={user ? <Home/> : <Login />}
+      />
+      <Route
+        path="/register"
+        element={user ? <Home/> : <Register />}
+      />
+    </Routes>
+  </BrowserRouter>
   );
 }
 
