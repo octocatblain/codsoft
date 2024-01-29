@@ -22,12 +22,8 @@ function App() {
         element={<Home />}
       />
       <Route
-        path="/"
-        element={<Home />}
-      />
-      <Route
         path="/about"
-        element={<ABout />}
+        element={<About />}
       />
       <Route
         path="/contact"
