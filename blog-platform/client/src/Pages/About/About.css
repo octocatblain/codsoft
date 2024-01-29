@@ -1,0 +1,18 @@
+.about_page{
+    padding-block: 6rem;
+
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.about_hero{
+    align-items: center;
+    flex: 6;
+    background: url("../../Assets/images/HeroImages/hero-2.jpg");
+    background-repeat: no-repeat;
+    object-fit: cover;
+    min-width: clamp(100dvw, 100%, 100dvw);
+    padding-inline: none;
+}
