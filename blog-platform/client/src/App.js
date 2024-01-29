@@ -1,5 +1,6 @@
 import "./App.css";
 import Navbar from "./Components/Navbar/Navbar";
+import NoPage from "./Pages/404/NoPage";
 import About from "./Pages/About/About";
 import BlogPost from "./Pages/BlogPost/BlogPost";
 import Contact from "./Pages/Contact/Contact";
@@ -33,7 +34,7 @@ function App() {
       />
       <Route
         path="/write"
-        element={user ? <Home/> : <WritePost />}
+        element={user ? <Home /> : <WritePost />}
       />
       <Route
         path="/post"
@@ -41,15 +42,19 @@ function App() {
       />
       <Route
         path="/settings"
-        element={user ? <Home/> : <Settings />}
+        element={user ? <Home /> : <Settings />}
       />
       <Route
         path="/login"
-        element={user ? <Home/> : <Login />}
+        element={user ? <Home /> : <Login />}
       />
       <Route
         path="/register"
-        element={user ? <Home/> : <Register />}
+        element={user ? <Home /> : <Register />}
+      />
+      <Route
+        path="*"
+        element={<NoPage />}
       />
     </Routes>
   </BrowserRouter>
