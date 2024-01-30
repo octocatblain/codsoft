@@ -1,6 +1,9 @@
 import "./About.css"
 import Layout from "../../Layout/Layout.jsx"
 import whyUs from "../../Assets/images/validation.png"
+import { whyUsData } from "../../Data/Index.js"
+
+
 
 const About = () => {
   return (
@@ -19,11 +22,14 @@ const About = () => {
               <h3 className="section_title">
                 Why Us
               </h3>
-              <p className="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, culpa totam vel rem, veniam atque tenetur odit laboriosam dolores nemo cupiditate aperiam pariatur, beatae neque facilis dolorem debitis fugit quia?</p>
 
-              <p className="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, culpa totam vel rem, veniam atque tenetur odit laboriosam dolores nemo cupiditate aperiam pariatur, beatae neque facilis dolorem debitis fugit quia?</p>
 
-              <p className="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, culpa totam vel rem, veniam atque tenetur odit laboriosam dolores nemo cupiditate aperiam pariatur, beatae neque facilis dolorem debitis fugit quia?</p>
+              {whyUsData.map((item, index) => (
+                <p className="text" key={index}>
+                  {item.text}
+                </p>
+              ))}
+
 
             </div>
             <div className="why_us_image">
