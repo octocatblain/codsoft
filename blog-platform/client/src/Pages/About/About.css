@@ -42,8 +42,8 @@
         gap: 1rem;
 
         .section_title{
-            background: linear-gradient(to left, grey, transparent);
-            border-inline-end: 2px solid lightgray;
+            background: linear-gradient(to left, green, transparent);
+            border-inline-end: 3px solid lime;
             background-size: contain;
         }
 
