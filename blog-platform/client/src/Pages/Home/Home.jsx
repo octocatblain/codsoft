@@ -13,7 +13,6 @@ const Home = () => {
         <Posts />
         <Sidebar />
       </div>
-      homepage
     </Layout>
   );
 };
