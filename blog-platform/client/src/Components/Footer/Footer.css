@@ -78,12 +78,13 @@ footer {
         display: flex;
         flex-direction: column;
         transition: all 500ms ease;
+        overflow-x: hidden;
     }
 
     .footer_link:hover{
         /* scale: 1.1; */
         color: var(--secondary-color);
-        transform: translateX(10px) scale(1.1);
+        transform: translateX(10px) ;
         transition: all 200ms ease;
     }
 
