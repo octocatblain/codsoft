@@ -1,18 +1,91 @@
-.about_page{
-    padding-block: 6rem;
+.about_page {
+    padding-block-start: 3.125rem;
+    padding-block-end: 6rem;
+    overflow-x: hidden;
 
-    .wrapper{
+    .wrapper {
         display: flex;
         flex-direction: column;
     }
 }
 
-.about_hero{
+.about_hero {
     align-items: center;
-    flex: 6;
-    background: url("../../Assets/images/HeroImages/hero-2.jpg");
+    background: url("../../Assets/images/HeroImages/hero-5.jpg");
     background-repeat: no-repeat;
     object-fit: cover;
+    background-blend-mode: overlay;
+    background-position: center;
+    background-attachment: fixed;
     min-width: clamp(100dvw, 100%, 100dvw);
     padding-inline: none;
+    padding-block: 3rem;
+    text-align: center;
+
+    color: var(--tertiary-color);
+
+    >h5.subtitle {
+        font-variant-caps: small-caps;
+        font-size: 1rem;
+    }
+}
+
+.why_us {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+
+    .why_us_content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
+
+        .section_title{
+            background: linear-gradient(to left, grey, transparent);
+            border-inline-end: 2px solid lightgray;
+            background-size: contain;
+        }
+
+        .text{
+            
+            line-height: 2rem
+            
+        }
+
+        .text::first-line{
+            font-size: 1.25rem;
+            font-weight: 500;
+            
+        }
+    }
+
+    .why_us_image {
+        display: grid;
+        place-items: center;
+
+        >img {
+            max-width: 75dvw;
+        }
+    }
+}
+
+@media screen  and (max-width: 990px){
+    .wrapper{
+        padding-inline: 2rem;
+        margin-inline: 0;
+    }
+    .why_us{
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        flex: 1 0 0 ;
+
+        .why_us_content{
+            flex: 1;
+        }
+    }
+
+    
+    
 }
