@@ -11,10 +11,9 @@
 
 .about_hero {
     align-items: center;
-    background: url("../../Assets/images/HeroImages/hero-5.jpg");
+    background: linear-gradient(to left, black, transparent), url("../../Assets/images/HeroImages/hero-5.jpg");
     background-repeat: no-repeat;
     object-fit: cover;
-    background-blend-mode: overlay;
     background-position: center;
     background-attachment: fixed;
     min-width: clamp(100dvw, 100%, 100dvw);
@@ -22,7 +21,7 @@
     padding-block: 3rem;
     text-align: center;
 
-    color: var(--tertiary-color);
+    color: var(--primary-color);
 
     >h5.subtitle {
         font-variant-caps: small-caps;
