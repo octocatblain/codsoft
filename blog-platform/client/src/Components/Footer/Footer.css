@@ -16,8 +16,10 @@ footer {
 }
 
 .footer_wrapper {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+    flex: 1 0 0 ;
 
     .footer_title {
         font-size: 2.5rem;
@@ -36,6 +38,7 @@ footer {
     flex-direction: column;
     flex: 1 0 0;
     gap: 1rem;
+    flex: 4;
 
     >p {
         display: flex;
@@ -48,6 +51,7 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    flex: 4;
     
    >div{
     display: flex;
@@ -73,6 +77,7 @@ footer {
     display: flex;
     gap: 1rem;
     flex-direction: column;
+    flex: 4;
 
     .footer_link{
         display: flex;
@@ -98,5 +103,28 @@ footer {
         font-size: small;
         font-variant-caps: petite-caps;
     }
+}
+
+@media screen and(max-width: 787px) {
+    .footer{
+        height: 100dvh;
+    }
+
+    .footer_wrapper{
+        display: flex;
+        flex-direction: column;
+        flex: 1 0 0;
+        contain: kayout;
+
+        
+
+    }
+
+    .footer_address,
+        .footer_socials,
+        .footer_links{
+            flex: 1;
+        }
+    
 }
 

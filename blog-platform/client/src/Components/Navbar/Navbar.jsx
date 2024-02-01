@@ -15,7 +15,7 @@ const Navbar = () => {
 
   return (
     <>
-      <header>
+      <header className="header responsive">
         <div className="logo">
           <img src={facebook} alt="facebook" />
           <img src={instagram} alt="instagram" />
