@@ -1,0 +1,126 @@
+.search_bar {
+    background: var(--secondary-bg-grey);
+    border-radius: 1rem;
+    padding: 1rem;
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+
+    >form {
+        display: flex;
+        gap: .75rem;
+
+        .search_wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex: 1;
+            gap: .625rem;
+
+            .search_column {
+                display: flex;
+                flex: 1;
+                align-items: center;
+                padding: 1rem;
+                gap: 1rem;
+                border-radius: .5rem;
+                background-color: var(--primary-bg-white);
+
+                .search_input {
+                    background-color: transparent;
+                    color: var(--secondary-clr-midblue);
+                    font-size: 1rem;
+                    flex: 1;
+                }
+
+                .close_search {
+                    color: #a5a6a6;
+                }
+
+                .close_search:hover {
+                    color: var(--primary-clr-lightblack);
+                }
+            }
+        }
+
+        .search_btn {
+            padding: 1rem;
+            border-radius: .5rem;
+            min-width: 10dvw;
+            font-size: 1.2rem;
+            font-weight: 500;
+            background-color: var(--secondary-clr-midblue);
+            color: var(--primary-bg-white);
+        }
+
+        .search_btn:hover {
+            background-color: var(--tertiary-bg-blue);
+        }
+    }
+
+    .search_sort{
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+        justify-content: center;
+        flex: 1;
+
+        .single_sort{
+            display: flex;
+            align-items: center;
+            gap: .5rem;
+            flex: 1;
+
+            .sort_label{
+                font-weight: 600;
+                color: var(--primary-clr-lightblack);
+            }
+
+            .sort_select{
+                background-color: var(--primary-bg-white);
+                border-radius: .25rem;
+                padding: .75rem;
+                padding-block: .5rem;
+                font-weight: 600;
+                font-size: 1rem;
+                flex: 1;
+            }
+        }
+
+        .clear_btn{
+            padding: .75rem;
+            border: 1px solid var(--primary-clr-lightblack);
+            border-radius: .25rem;
+            font-size: 1rem;
+            font-weight: 600;
+            transition: all 500ms ease;
+        }
+
+        .clear_btn:hover{
+            color: var(--primary-bg-white);
+            background-color: darkred;
+            border: 1px solid var(--primary-bg-white);
+            transition: all 200ms ease;
+        }
+        
+    }
+}
+
+
+@media screen and (max-width: 787px) {
+
+    .search_bar {
+        border-radius: .5rem;
+
+        >form {
+            flex-direction: column;
+
+            .search_wrapper {
+                flex-direction: column;
+
+            }
+        }
+    }
+
+
+}

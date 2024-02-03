@@ -1,0 +1,98 @@
+.value_section {
+    margin-block: 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+    >.subtitle {
+        font-weight: 900;
+        font-size: 2.5rem;
+        
+        padding-inline-start: 2rem;
+    }
+
+    .value_wrapper {
+        display: flex;
+        justify-content: space-evenly;
+        flex: 1;
+        gap: 2rem;
+
+        .value_card {
+            box-shadow: 0 0 10px teal;
+            padding: 2rem;
+            border-radius: .5rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            max-width: 25rem;
+            transition: all 200ms ease;
+
+            .value_header {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                gap: 1rem;
+
+                .value_image {
+                    font-size: 1.5rem;
+                    color: var(--tertiary-bg-blue);
+                }
+
+                .value {
+                    color: var(--tertiary-bg-blue);
+                }
+            }
+
+            .value_description {
+                line-height: 1.5;
+            }
+        }
+
+        .value_card:hover {
+            box-shadow: 0 10px 10px teal;
+            transform: translateY(-10px);
+            font-weight: 400;
+            transition: all 200ms ease;
+        }
+    }
+
+    .cta_content{
+        background-color: var(--secondary-bg-grey-light);
+        padding: 5rem;
+        margin-inline: 6rem;
+        border-radius: .5rem;
+        gap: 5rem;
+        display: flex;
+        justify-content: space-between;
+        box-shadow: 0 0 10px var(--secondary-bg-grey);
+
+        .cta_text{
+            font-weight: 700;
+            font-size: 2rem;
+            color: var(--secondary-clr-midblue);
+
+            >span{
+                color: var(--tertiary-clr-black);
+            }
+        }
+
+        .cta_btn{
+            border: 2px solid var(--secondary-clr-midblue);
+            color: var(--secondary-clr-midblue);
+            transition: all 500ms ease;
+            font-size: 1.25rem;
+            font-weight: 700;
+            padding-inline: 1.5rem;
+            padding-block: 1rem;
+            border-radius: .5rem;
+        }
+
+        .cta_btn:hover{
+            background-color: var(--hover-bg-blue);
+            color: var(--primary-bg-white);
+            border: transparent;
+            transform: translateX(10px);
+            transition: all 200ms ease;
+        }
+    }
+}

@@ -1,0 +1,36 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 3.125rem;
+    min-width: 100%;
+    flex: 1;
+
+    padding-inline: 6rem;
+    background-color: var(--primary-bg-white);
+
+    position: fixed;
+    top: 0;
+    z-index: 999;
+
+
+    .logo {
+        flex: 1;
+        color: var(--secondary-clr-midblue);
+
+        .title>span {
+            font-weight: 100;
+        }
+    }
+
+    .nav_menu {
+        display: flex;
+        gap: 2rem;
+        flex: 1 0 0;
+        justify-content: flex-end;
+
+        .nav_item {
+            font-size: 1.3rem;
+        }
+    }
+}
