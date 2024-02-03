@@ -12,6 +12,7 @@ The repository for all the projects built during my Codsoft Internship.
 - Project 2: Blog Platform &mdash; [Live Link](blog-platform-blain.vercel.app) / [Project Folder](https://github.com/octocatblain/codsoft/blog-platform)
 - Project 3: Job Board Platform &mdash; [Live Link](jobsearch-blain.vercel.app) / [Project Folder](https://github.com/octocatblain/codsoft/jobsearch)
 
+
 ## :shipit:Author
 
 - Blain Muema &mdash; [Twitter](https://twitter.com/octocatblain) / [Github](https://github.com/octocatblain)
