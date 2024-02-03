@@ -5,11 +5,22 @@
 /.pnp
 .pnp.js
 
+/jobsearch/node_modules
+/blog-platform/node_modules
+/calculator/node_modules
+
+/calculator/.pnp
+/jobsearch/.pnp
+/blog-platform/.pnp
+.pnp.js
+
 # testing
 /coverage
 
 # production
-/build
+/calculator/build
+/jobsearch/build
+/blog-platform/build
 
 # misc
 .DS_Store
