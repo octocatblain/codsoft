@@ -48,11 +48,11 @@ function Footer() {
         </div>
         <p className="text">We always make our job seekers find the best jobs and companies find the best candidates.</p>
         <div className="icons">
-          <BsTwitterX />
-          <BsFacebook />
-          <BsInstagram />
-          <SiHashnode />
-          <BsWhatsapp />
+          <BsTwitterX className="icon"/>
+          <BsFacebook className="icon"/>
+          <BsInstagram className="icon"/>
+          <SiHashnode className="icon"/>
+          <BsWhatsapp className="icon"/>
         </div>
       </div>
       <div className="footer_links">
