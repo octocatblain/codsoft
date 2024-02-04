@@ -83,11 +83,15 @@ function Footer() {
         </div>
       </div>
       <div className="footer_socials">
-        <BsTwitterX />
-        <BsFacebook />
-        <BsInstagram />
-        <SiHashnode />
-        <BsWhatsapp />
+
+        <h3 className="socials_title">Our Socials</h3>
+        <div className="icons">
+          <BsTwitterX />
+          <BsFacebook />
+          <BsInstagram />
+          <SiHashnode />
+          <BsWhatsapp />
+        </div>
       </div>
 
     </footer>

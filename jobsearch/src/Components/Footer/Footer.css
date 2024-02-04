@@ -69,4 +69,19 @@
             }
         }
     }
+
+    .footer_socials{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.2rem;
+    }
+
+    .footer_socials>.icons{
+        display: flex;
+        gap: 2rem;
+        font-size: 1.5rem;
+    }
 }
