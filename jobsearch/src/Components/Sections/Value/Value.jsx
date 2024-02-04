@@ -1,6 +1,8 @@
 import "./Value.css"
 import { BsDroplet } from "react-icons/bs"
 import { BiNotepad, BiShieldAlt2 } from "react-icons/bi"
+import { useEffect } from "react"
+import ScrollReveal from "scrollreveal"
 
 const values = [
   {
@@ -23,6 +25,11 @@ const values = [
   },
 ]
 const Value = () => {
+
+  useEffect(() => {
+    ScrollReveal().reveal('.job_card');
+  }, []);
+
   return (
     <div className='value_section'>
       <h2 className="subtitle">The values that hold us true <br />and accountable</h2>

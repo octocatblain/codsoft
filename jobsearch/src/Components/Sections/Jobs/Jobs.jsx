@@ -1,5 +1,8 @@
+import { useEffect } from "react";
 import "./Jobs.css"
 import { BiTimeFive } from "react-icons/bi"
+import  ScrollReveal  from "scrollreveal";
+
 
 const jobs = [
   {
@@ -124,6 +127,11 @@ const jobs = [
 ]
 
 const Jobs = () => {
+
+  useEffect(() => {
+    ScrollReveal().reveal('.job_card');
+  }, []);
+
   return (
     <div className='job_section'>
       <div className="job_wrapper">
