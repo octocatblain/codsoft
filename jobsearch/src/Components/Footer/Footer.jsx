@@ -1,5 +1,8 @@
 import "./Footer.css"
-import {BiSearchAlt} from "react-icons/bi"
+import { BiSearchAlt } from "react-icons/bi"
+import { BsTwitterX, BsFacebook, BsInstagram, BsWhatsapp } from "react-icons/bs";
+import { SiHashnode } from "react-icons/si";
+
 
 const column1 = [
   { header: "Product" },
@@ -40,46 +43,53 @@ function Footer() {
     <footer className='footer'>
       <div className="footer_about">
         <div className="footer_header">
-          <BiSearchAlt className="icon footer_icon"/>
+          <BiSearchAlt className="icon footer_icon" />
           <h1 className="footer_title">Job<span>Search</span></h1>
         </div>
         <p className="text">We always make our job seekers find the best jobs and companies find the best candidates.</p>
       </div>
       <div className="footer_links">
-          <div className="links_column">
-            {column1.map((item, index) => (
-              <div key={index}>
-                <h4 className="links__header">{item.header}</h4>
-                <p className="link">{item.link}</p>
-              </div>
-            ))}
-          </div>
-          <div className="links_column">
-            {column2.map((item, index) => (
-              <div key={index}>
-                <h4 className="links__header">{item.header}</h4>
-                <p className="link">{item.link}</p>
-              </div>
-            ))}
-          </div>
-          <div className="links_column">
-            {column3.map((item, index) => (
-              <div key={index}>
-                <h4 className="links__header">{item.header}</h4>
-                <p className="link">{item.link}</p>
-              </div>
-            ))}
-          </div>
-          <div className="links_column">
-            {column4.map((item, index) => (
-              <div key={index}>
-                <h4 className="links__header">{item.header}</h4>
-                <p className="link">{item.link}</p>
-              </div>
-            ))}
-          </div>
-          </div>
-      
+        <div className="links_column">
+          {column1.map((item, index) => (
+            <div key={index}>
+              <h4 className="links__header">{item.header}</h4>
+              <p className="link">{item.link}</p>
+            </div>
+          ))}
+        </div>
+        <div className="links_column">
+          {column2.map((item, index) => (
+            <div key={index}>
+              <h4 className="links__header">{item.header}</h4>
+              <p className="link">{item.link}</p>
+            </div>
+          ))}
+        </div>
+        <div className="links_column">
+          {column3.map((item, index) => (
+            <div key={index}>
+              <h4 className="links__header">{item.header}</h4>
+              <p className="link">{item.link}</p>
+            </div>
+          ))}
+        </div>
+        <div className="links_column">
+          {column4.map((item, index) => (
+            <div key={index}>
+              <h4 className="links__header">{item.header}</h4>
+              <p className="link">{item.link}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+      <div className="footer_socials">
+        <BsTwitterX />
+        <BsFacebook />
+        <BsInstagram />
+        <SiHashnode />
+        <BsWhatsapp />
+      </div>
+
     </footer>
   )
 }
