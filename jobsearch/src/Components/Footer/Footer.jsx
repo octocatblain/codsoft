@@ -47,6 +47,13 @@ function Footer() {
           <h1 className="footer_title">Job<span>Search</span></h1>
         </div>
         <p className="text">We always make our job seekers find the best jobs and companies find the best candidates.</p>
+        <div className="icons">
+          <BsTwitterX />
+          <BsFacebook />
+          <BsInstagram />
+          <SiHashnode />
+          <BsWhatsapp />
+        </div>
       </div>
       <div className="footer_links">
         <div className="links_column">
@@ -80,17 +87,6 @@ function Footer() {
               <p className="link">{item.link}</p>
             </div>
           ))}
-        </div>
-      </div>
-      <div className="footer_socials">
-
-        <h3 className="socials_title">Our Socials</h3>
-        <div className="icons">
-          <BsTwitterX />
-          <BsFacebook />
-          <BsInstagram />
-          <SiHashnode />
-          <BsWhatsapp />
         </div>
       </div>
 
