@@ -39,7 +39,7 @@
         font-size: 1rem;
         flex: 1;
 
-        .inks_column {
+        .links_column {
             display: flex;
             width: 10rem;
             flex-direction: column;
