@@ -30,6 +30,8 @@ const Companies = () => {
         autoplay="true"
         navigation="false"
         pagination="false"
+        zoom="true"
+        effect-cube="true"
       >
         <swiper-slide className="slide_item"><img src="https://images.unsplash.com/5/unsplash-kitsune-4.jpg?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjEyMDd9&s=ce40ce8b8ba365e5e6d06401e5485390" alt="" /></swiper-slide>
         <swiper-slide className="slide_item"><img src="https://images.unsplash.com/photo-1416339306562-f3d12fefd36f" alt="" /></swiper-slide>
