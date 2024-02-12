@@ -99,6 +99,10 @@
 
 @media screen and (max-width: 767px){
 
+    .value_wrapper{
+        flex-wrap: wrap;
+    }
+
     .cta_content{
         padding: 1rem !important;
         margin-inline: 1rem !important;
