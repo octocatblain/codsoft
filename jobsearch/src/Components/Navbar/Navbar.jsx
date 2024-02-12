@@ -8,9 +8,13 @@ const Navbar = () => {
 
     const [isResponsive, setIsResponsive] = useState(false)
 
-    
+    const toggleResponsive = () => {
+        setIsResponsive(!isResponsive);
+    };
+
+
     return (
-        <div className="navbar">
+        <div className={`navbar ${isResponsive ? "responsive" : ""}`}>
             <div className="logo">
                 <h1 className="title">Job<span>Search</span></h1>
             </div>
@@ -23,9 +27,10 @@ const Navbar = () => {
                 <li className="nav_item"><Link to="/contact">Contact</Link></li>
                 <li className="nav_item"><Link to="/login">Login</Link></li>
                 <li className="nav_item"><Link to="/register">Register</Link></li>
-                <BiXCircle className="icon close_icon" />
+                {/* {isResponsive && (<BiXCircle className="icon close_icon" />)} */}
+                <BiXCircle className="icon close_icon" onClick={toggleResponsive} />
             </ul>
-            <FaBars className="icon menu_icon" />
+            <FaBars className="icon menu_icon" onClick={toggleResponsive}/>
 
         </div>
     )
