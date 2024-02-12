@@ -10,7 +10,6 @@ const NotificationTray = ({
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0, x: "-12rem" }}
-            className="notification__tray"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0, x: "-12rem" }}
