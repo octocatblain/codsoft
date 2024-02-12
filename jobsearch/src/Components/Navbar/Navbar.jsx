@@ -1,6 +1,14 @@
 import "./Navbar.css"
 import { Link } from "react-router-dom"
+import { FaBars } from "react-icons/fa"
+import { BiXCircle } from "react-icons/bi"
+import { useState } from "react"
+
 const Navbar = () => {
+
+    const [isResponsive, setIsResponsive] = useState(false)
+
+    
     return (
         <div className="navbar">
             <div className="logo">
@@ -15,8 +23,9 @@ const Navbar = () => {
                 <li className="nav_item"><Link to="/contact">Contact</Link></li>
                 <li className="nav_item"><Link to="/login">Login</Link></li>
                 <li className="nav_item"><Link to="/register">Register</Link></li>
-
+                <BiXCircle className="icon close_icon" />
             </ul>
+            <FaBars className="icon menu_icon" />
 
         </div>
     )
