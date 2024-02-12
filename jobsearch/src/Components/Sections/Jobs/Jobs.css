@@ -51,12 +51,12 @@
                 -webkit-box-orient: vertical;
             }
 
-            .company{
+            .company {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
 
-                >img{
+                >img {
                     display: flex;
                     flex: 1;
                     object-fit: contain;
@@ -66,7 +66,7 @@
                 }
             }
 
-            .apply_btn{
+            .apply_btn {
                 border: 1px solid var(--primary-clr-lightblack);
                 padding: 1rem;
                 font-size: 1.25rem;
@@ -76,12 +76,23 @@
             }
         }
 
-        .job_card:hover{
+        .job_card:hover {
             cursor: pointer;
             background-color: var(--hover-bg-blue);
             color: var(--primary-bg-white);
             transform: translateY(-10px);
             transition: all 200ms ease;
         }
+    }
+}
+
+@media screen and (max-width: 787px) {
+
+    .job_wrapper {
+        justify-content: space-evenly !important;
+    }
+
+    .job_card {
+        max-width: 20rem !important;
     }
 }
