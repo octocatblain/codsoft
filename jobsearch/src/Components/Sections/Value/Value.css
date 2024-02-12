@@ -96,3 +96,12 @@
         }
     }
 }
+
+@media screen and (max-width: 767px){
+
+    .cta_content{
+        padding: 1rem !important;
+        margin-inline: 1rem !important;
+    }
+    
+}
