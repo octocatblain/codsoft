@@ -1,6 +1,5 @@
-:root {
-    --ff: Arial, Helvetica, sans-serif;
 
+:root {
     --primary-clr-lightblack: #252b36;
     --secondary-clr-midblue: #2a68ff;
     --tertiary-clr-black: #111;
@@ -17,6 +16,7 @@
 
 }
 
+
 * {
     padding: 0;
     margin: 0;
@@ -24,11 +24,11 @@
     border: none;
     outline: none;
     list-style: none;
+    font-family: "Inter Tight", sans-serif;
 
 }
 
 .main {
-    font-family: var(--ff);
     color: var(--primary-clr);
     background: white;
 }
