@@ -18,6 +18,12 @@
         flex: 1;
         color: var(--secondary-clr-midblue);
 
+        .title{
+            display: flex;
+            gap: .25rem;
+            align-items: center;
+        }
+
         .title>span {
             font-weight: 100;
         }

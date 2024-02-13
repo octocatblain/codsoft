@@ -3,6 +3,7 @@ import { Link } from "react-router-dom"
 import { FaBars } from "react-icons/fa"
 import { BiXCircle } from "react-icons/bi"
 import { useState } from "react"
+import {BiSearchAlt} from "react-icons/bi"
 
 const Navbar = () => {
 
@@ -16,7 +17,7 @@ const Navbar = () => {
     return (
         <div className={`navbar ${isResponsive ? "responsive" : ""}`}>
             <div className="logo">
-                <h1 className="title">Job<span>Search</span></h1>
+                <h1 className="title"><BiSearchAlt className="icon" />Job<span>Search</span></h1>
             </div>
 
             <ul className="nav_menu">
