@@ -26,7 +26,8 @@
         font-weight: 700;
         color: var(--secondary-clr-midblue);
       }
-      >em{
+
+      >em {
         font-weight: 200;
       }
     }
@@ -40,5 +41,130 @@
     background-repeat: no-repeat;
     background-position: right;
     border-radius: .25rem;
+  }
+}
+
+.about_story {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-items: center;
+  padding: 3rem;
+  gap: 2rem;
+
+  >.title {
+    font-size: 5rem;
+
+    >span {
+      font-weight: 200;
+    }
+  }
+
+  >.text {
+    line-height: 2;
+
+    >span {
+      color: var(--secondary-clr-midblue);
+      font-weight: 700;
+    }
+  }
+
+  .about_stats {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 3rem;
+
+    >.text {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      gap: 0rem;
+      width: 8rem;
+      height: 8rem;
+      padding: 1rem;
+      border-radius: 50%;
+      border: 1px solid var(--secondary-clr-midblue);
+      font-weight: 400;
+
+      >span {
+        font-weight: 600;
+        font-size: 1.8rem
+      }
+    }
+  }
+}
+
+.about_values {
+  padding-block: 3rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.values_content {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 1rem;
+  flex: 6;
+}
+
+.about_apart,
+.about_promise {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-inline: 4rem;
+
+  >.title {
+    color: var(--secondary-clr-midblue);
+    font-size: 1.5rem;
+    font-weight: 900;
+  }
+
+  >.text {
+    line-height: 2;
+    font-size: 1.5rem;
+    font-weight: 600;
+
+    >span {
+      font-weight: 400;
+      color: var(--secondary-clr-midblue);
+    }
+  }
+}
+
+.values_cards {
+  flex: 6;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 2.75rem;
+
+  .value_card {
+    max-width: 18.75rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    border-radius: .5rem;
+    box-shadow: 0 0 10px var(--secondary-clr-midblue);
+    padding: 2rem;
+
+    .value_title {
+      font-variant: small-caps;
+      font-size: 1.35rem;
+      font-weight: 500;
+      color: var(--secondary-clr-midblue);
+    }
+
+    .value_desc {
+      line-height: 1.5;
+      text-align: center;
+    }
   }
 }
