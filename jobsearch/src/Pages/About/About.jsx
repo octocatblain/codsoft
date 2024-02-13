@@ -1,5 +1,6 @@
 import "./About.css"
 import Layout from "../../Layout/Layout";
+import { BsArrowRightCircle } from "react-icons/bs"
 
 const Promises = [
   {
@@ -63,6 +64,11 @@ const About = () => {
               ))
             }
           </div>
+        </div>
+
+        <div className="about_cta">
+          <p className="text">Join us on a transformative journey towards career success. Together, let's unlock new opportunities, realize your potential, and shape a brighter future. <br/>Welcome to <span>JobSearch</span> – where your career aspirations become reality.</p>
+          <button className="about_cta_btn">Join the Community! <BsArrowRightCircle  className="icon"/></button>
         </div>
       </div>
     </Layout>
