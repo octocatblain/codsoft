@@ -103,5 +103,7 @@
         flex-direction: column !important;
         justify-content: space-evenly !important;
         flex: 1 !important;
+        position: absolute;
+        top: 0;
     }
 }
