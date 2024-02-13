@@ -26,6 +26,9 @@
         font-weight: 700;
         color: var(--secondary-clr-midblue);
       }
+      >em{
+        font-weight: 200;
+      }
     }
   }
 

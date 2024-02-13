@@ -23,13 +23,14 @@
             color: var(--secondary-clr-midblue);
 
             >span {
-                font-weight: 100;
+                font-weight: 200;
             }
         }
 
         >span.subtitle{
             font-weight: 100 !important;
             font-variant-caps: small-caps;
+            font-weight: 300 !important;
         }
     }
 
@@ -43,7 +44,7 @@
             font-weight: 900;
 
             >span {
-                font-weight: 100;
+                font-weight: 300;
             }
         }
     }
