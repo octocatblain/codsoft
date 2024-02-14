@@ -47,7 +47,7 @@ const Contact = () => {
         </div>
 
         <div className="contact map">
-
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7977.5847538491325!2d36.81116789159048!3d-1.2993677447531362!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f10e7afcbe647%3A0x8c73172faa633890!2sUpper%20Hill%2C%20Nairobi!5e0!3m2!1sen!2ske!4v1707918761554!5m2!1sen!2ske"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>
 
