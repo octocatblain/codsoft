@@ -1,0 +1,116 @@
+.contact {
+    padding-inline: 6rem;
+    padding-block: 2rem;
+}
+
+.contact_section {
+    display: flex;
+    justify-content: space-evenly;
+    place-items: center;
+    gap: 2rem;
+    box-shadow: 0 0 10px gray;
+    border-radius: .5rem;
+
+
+    .contact_form {
+        padding: 4rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        flex: 6;
+        background: linear-gradient(to bottom, var(--secondary-clr-midblue), black);
+        border-bottom-left-radius: inherit;
+        border-top-left-radius: inherit;
+
+        >.title {
+            font-size: 1.5rem;
+            color: white;
+        }
+
+        >.form {
+            display: flex;
+            flex-direction: column;
+            gap: .75rem;
+
+            >input,
+            >textarea {
+                /* width: 300px; */
+                background: transparent;
+                padding: .75rem;
+                font-size: 1rem;
+                border-bottom: 1px solid var(--secondary-clr-midblue);
+                color: black;
+            }
+
+            >textarea {
+                height: 250px;
+                padding: 1rem;
+                color: white;
+                overflow: scroll;
+                resize: none;
+                border: none;
+                scrollbar-track-color: none;
+            }
+
+            >input::placeholder,
+            >textarea::placeholder {
+                color: lightgray;
+            }
+
+            .contact_submit {
+                padding: 1rem;
+                border-radius: .25rem;
+                color: var(--secondary-clr-midblue);
+                border: var(--secondary-clr-midblue);
+                font-size: 1.2rem;
+                font-weight: 500;
+            }
+        }
+    }
+
+    .contact_info {
+        flex: 6;
+        padding: 2rem;
+        gap: 2rem;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+
+        .contact_info_title {
+            font-size: 2rem;
+        }
+
+        >.text {
+            font-size: 1rem;
+        }
+
+        .contact_info_content {
+            display: flex;
+            flex-direction: column;
+            
+            gap: 1rem;
+
+            .info-item {
+                display: flex;
+                gap: 2rem;
+                align-items: center;
+
+                >.icon {
+                    /* padding: 1rem; */
+                    /* font-size: 2rem; */
+                    width: 2.5rem;
+                    height: 2.5rem;
+                    padding: .5rem;
+                    background: transparent;
+                    color: black;
+                    border-radius: 50%;
+                    border: 1px solid var(--secondary-clr-midblue);
+                }
+
+                >span{
+                    color: rgb(0, 0, 0, 0.8);
+                }
+            }
+        }
+    }
+}
