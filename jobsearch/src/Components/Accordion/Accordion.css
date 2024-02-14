@@ -1,0 +1,22 @@
+/* Accordion styles */
+.ui.accordion {
+    width: 100%;
+  }
+  
+  .ui.accordion .title {
+    cursor: pointer;
+    padding: 0.5em;
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+  }
+  
+  .ui.accordion .content {
+    padding: 0.5em;
+    border-top: none;
+    display: none;
+  }
+  
+  .ui.accordion .content.active {
+    display: block;
+  }
+  
