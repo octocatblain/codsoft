@@ -1,22 +1,47 @@
 /* Accordion styles */
 .ui.accordion {
-    width: 100%;
+  width: 100%;
+  border-radius: .5rem;
+}
+
+.ui.accordion .title {
+  cursor: pointer;
+  padding: 0.5em;
+  padding-inline-end: 2rem;
+  background-color: #f4f4f4;
+  border: 1px solid #ddd;
+  font-weight: 300;
+  color: var(--secondary-clr-midblue);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  >.icon {
+    font-size: 1.5rem;
   }
-  
-  .ui.accordion .title {
-    cursor: pointer;
-    padding: 0.5em;
-    background-color: #f4f4f4;
-    border: 1px solid #ddd;
-  }
-  
-  .ui.accordion .content {
-    padding: 0.5em;
-    border-top: none;
-    display: none;
-  }
-  
-  .ui.accordion .content.active {
-    display: block;
-  }
-  
+}
+
+.ui.accordion .title:first-child {
+  border-top-left-radius: .5rem;
+  border-top-right-radius: .5rem;
+}
+
+.ui.accordion .title:last-child {
+  border-bottom-left-radius: .5rem;
+  border-bottom-right-radius: .5rem;
+}
+
+.ui.accordion .content {
+  padding: 0.5em;
+  border-top: none;
+  display: none;
+}
+
+.ui.accordion .content.active {
+  display: block;
+  padding: 2rem;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  text-size-adjust: auto;
+}

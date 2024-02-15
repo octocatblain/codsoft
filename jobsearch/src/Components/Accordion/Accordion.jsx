@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import "./Accordion.css"
+import { BiPlusCircle, BiMinusCircle } from "react-icons/bi"
 
 const Accordion = ({ items }) => {
   const [activeIndex, setActiveIndex] = useState(null);
@@ -14,8 +15,9 @@ const Accordion = ({ items }) => {
     return (
       <React.Fragment key={index}>
         <div className={`title ${isActive}`} onClick={() => onItemClick(index)}>
-          <i className="dropdown icon"></i>
+
           {item.title}
+          {isActive ? <BiMinusCircle className="icon" /> : <BiPlusCircle className="icon" />}
         </div>
         <div className={`content ${isActive}`}>
           <p>{item.content}</p>
