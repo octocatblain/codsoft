@@ -15,7 +15,7 @@ const Navbar = () => {
 
 
     return (
-        <div className={`navbar ${isResponsive ? "responsive" : ""}`}>
+        <div className={`navbar ${isResponsive ? "responsive" : ""}`} id="navbar">
             <div className="logo">
                 <h1 className="title"><BiSearchAlt className="icon" />Job<span>Search</span></h1>
             </div>

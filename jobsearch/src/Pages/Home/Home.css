@@ -1,3 +1,17 @@
+@keyframes up_down {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
 .hero {
     height: 100dvh;
     width: 100%;
@@ -18,9 +32,21 @@
     }
 }
 
+@keyframes up_down {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
 .hero_title {
-    /* position: absolute;
-    top: 10dvh; */
     align-items: center;
     color: white;
     display: grid;
@@ -28,24 +54,53 @@
     z-index: 800;
     padding: 2rem;
 
-    >.title {
-        font-size: 3rem;
-        text-align: center;
+    >.hero_header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
 
-        >.job {
-            flex: 1;
-            color: var(--secondary-clr-midblue);
+        >.title {
+            font-size: 3rem;
+            text-align: center;
 
-            >span {
-                font-weight: 200;
+            >.job {
+                flex: 1;
+                color: var(--secondary-clr-midblue);
+
+                >span {
+                    font-weight: 200;
+                }
+            }
+
+            >span.subtitle {
+                font-weight: 100 !important;
+                font-variant-caps: small-caps;
+                font-weight: 300 !important;
             }
         }
 
-        >span.subtitle {
-            font-weight: 100 !important;
-            font-variant-caps: small-caps;
-            font-weight: 300 !important;
+
+
+        >.icons {
+            display: flex;
+            flex-direction: column;
+            gap: .25rem;
+
+
+            >.icon {
+                font-size: 2rem;
+                color: white;
+                font-weight: 100 !important;
+                animation: up_down 2s ease infinite;
+            }
+
+            >.arrow_down {
+                font-size: 2rem;
+            }
         }
+
+
     }
 
     .text {

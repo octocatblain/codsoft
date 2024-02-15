@@ -5,7 +5,7 @@ import { CiLocationOn } from "react-icons/ci"
 
 const Search = () => {
   return (
-    <div className='search_bar'>
+    <div className='search_bar' id="search_bar">
       <form>
         <div className="search_wrapper">
           <div className="search_column">
