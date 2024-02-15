@@ -1,6 +1,7 @@
 import "./About.css"
 import Layout from "../../Layout/Layout";
 import { BsArrowRightCircle } from "react-icons/bs"
+import Accordion from '../../Components/Accordion/Accordion';
 
 const Promises = [
   {
@@ -16,6 +17,38 @@ const Promises = [
     "desc": "We believe in the power of community. Through networking opportunities, career resources, and direct engagement with employers, JobSearch fosters a supportive ecosystem where job seekers can thrive and succeed."
   }
 ];
+
+const faqs = [
+  {
+    "title": "What is JobSearch?",
+    "content": "JobSearch is an online platform designed to help individuals find employment opportunities by providing a user-friendly interface to search and apply for jobs."
+  },
+  {
+    "title": "How can I use JobSearch to find a job?",
+    "content": "To use JobSearch, simply create an account, complete your profile, and start searching for jobs based on your preferences such as location, industry, and job title. You can also upload your resume to apply for jobs directly through the platform."
+  },
+  {
+    "title": "Is JobSearch free to use?",
+    "content": "Yes, JobSearch is completely free for job seekers. There are no subscription fees or charges for using the platform to search and apply for jobs."
+  },
+  {
+    "title": "Can employers post job listings on JobSearch?",
+    "content": "Yes, employers can post job listings on JobSearch to reach a large pool of potential candidates. They can create an account, fill out the necessary details about the job, and post it for job seekers to view and apply."
+  },
+  {
+    "title": "How do I edit my profile on JobSearch?",
+    "content": "To edit your profile on JobSearch, log in to your account, go to the profile section, and click on the edit button. From there, you can update your personal information, work experience, education, and skills."
+  },
+  {
+    "title": "Is my personal information secure on JobSearch?",
+    "content": "Yes, JobSearch takes the security and privacy of your personal information seriously. We use industry-standard security measures to protect your data from unauthorized access or disclosure."
+  },
+  {
+    "title": "How can I contact JobSearch for support?",
+    "content": "If you need assistance or have any questions about using JobSearch, you can contact our support team through the 'Contact Us' page on the website. We're here to help you with any inquiries or concerns you may have."
+  }
+]
+
 
 
 const About = () => {
@@ -67,8 +100,15 @@ const About = () => {
         </div>
 
         <div className="about_cta">
-          <p className="text">Join us on a transformative journey towards career success. Together, let's unlock new opportunities, realize your potential, and shape a brighter future. <br/>Welcome to <span>JobSearch</span> – where your career aspirations become reality.</p>
-          <button className="about_cta_btn">Join the Community! <BsArrowRightCircle  className="icon"/></button>
+          <p className="text">Join us on a transformative journey towards career success. Together, let's unlock new opportunities, realize your potential, and shape a brighter future. <br />Welcome to <span>JobSearch</span> – where your career aspirations become reality.</p>
+          <button className="about_cta_btn">Join the Community! <BsArrowRightCircle className="icon" /></button>
+        </div>
+
+        <div className="about_faqs">
+          <div className="ui faq_container">
+            <h1 className="faq_section_title">FAQs</h1>
+            <Accordion items={faqs} />
+          </div>
         </div>
       </div>
     </Layout>

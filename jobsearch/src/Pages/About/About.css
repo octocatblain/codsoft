@@ -231,3 +231,20 @@
     transition: all 200ms ease;
   }
 }
+
+.about_faqs {
+  margin-block: 3rem;
+  margin-inline: 4rem;
+  
+
+  .faq_container {
+    padding: 2rem;
+  }
+
+  .faq_section_title {
+    color: var(--secondary-clr-midblue);
+    font-size: 2rem;
+    font-weight: 900;
+    padding-block: 1rem;
+  }
+}
