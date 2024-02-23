@@ -1,0 +1,18 @@
+.home_link {
+    color: var(--tertiary-bg-blue);
+    padding: .5rem;
+    border-radius: 50%;
+    border: 1px solid var(--tertiary-bg-blue);
+
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+
+    transition: all 500ms ease;
+}
+
+.home_link:hover {
+    transform:scale(1.1);
+    transition: all 200ms ease;
+}
+

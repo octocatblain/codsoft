@@ -1,6 +1,7 @@
 import React from 'react'
 import { FiArrowRightCircle } from 'react-icons/fi'
 import "./Register.css"
+import HomeButton from '../../Components/Buttons/HomeButton'
 
 const Register = () => {
   return (
@@ -23,6 +24,8 @@ const Register = () => {
           <p className="register_text">Already part of the community?{" "}<a href="/login">Login <FiArrowRightCircle /></a></p>
         </form>
       </div>
+
+      <HomeButton className="home_btn" />
     </div>
   )
 }
