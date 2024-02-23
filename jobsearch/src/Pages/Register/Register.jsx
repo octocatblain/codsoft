@@ -2,6 +2,7 @@ import React from 'react'
 import { FiArrowRightCircle } from 'react-icons/fi'
 import "./Register.css"
 import HomeButton from '../../Components/Buttons/HomeButton'
+import { Link } from 'react-router-dom'
 
 const Register = () => {
   return (
@@ -21,11 +22,13 @@ const Register = () => {
           <label htmlFor="confirmPassword">Confirm password</label>
           <input className='password' type="password" name="confirmPassword" id="password" />
           <button className='register_btn' type="submit">Register</button>
-          <p className="register_text">Already part of the community?{" "}<a href="/login">Login <FiArrowRightCircle /></a></p>
+          <p className="register_text">Already part of the community?{" "}
+          <Link className='login_link' to="/login"> Login<FiArrowRightCircle /> </Link>
+          </p>
         </form>
       </div>
 
-      <HomeButton className="home_btn" />
+      <HomeButton />
     </div>
   )
 }

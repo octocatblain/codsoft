@@ -54,7 +54,7 @@
         align-self: center;
     }
 
-    .register_btn:hover{
+    .register_btn:hover {
         background-color: var(--hover-bg-blue);
     }
 
@@ -67,21 +67,21 @@
         gap: .25rem;
 
 
-        >a {
+        .login_link {
             display: flex;
             justify-content: center;
             align-items: center;
             gap: .25rem;
             font-weight: 700;
 
-            >*{
+            >* {
                 transition: all 500ms ease;
             }
         }
 
-        >a:hover {
+        .login_link:hover {
             text-decoration: underline;
-            
+
 
             >* {
                 transform: translateX(5px);

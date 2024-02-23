@@ -1,6 +1,8 @@
 import React from 'react'
 import { FiArrowRightCircle } from 'react-icons/fi'
 import "./Login.css"
+import HomeButton from '../../Components/Buttons/HomeButton'
+import { Link } from 'react-router-dom'
 
 const Login = () => {
   return (
@@ -14,9 +16,13 @@ const Login = () => {
           <label htmlFor="password">Password</label>
           <input className='password' type="password" name="password" id="password" />
           <button className='login_btn' type="submit">Login</button>
-          <p className="register_text">Not yet registed?{" "}<a href="/register">Register<FiArrowRightCircle /></a></p>
+          <p className="register_text">Not yet registed?{" "}
+            <Link className='register_link' to="/register"> Register<FiArrowRightCircle /> </Link>
+          </p>
         </form>
       </div>
+
+      <HomeButton />
     </div>
   )
 }
