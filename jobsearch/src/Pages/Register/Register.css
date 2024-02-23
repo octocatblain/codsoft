@@ -1,0 +1,93 @@
+.register {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100dvh;
+}
+
+.register_form {
+    width: 31.25rem;
+    height: 50dvh;
+    padding: 2rem;
+    border-radius: .5rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 1rem;
+
+    .register_title {
+        font-size: 2rem;
+        font-weight: 700;
+        text-align: center;
+        width: 100%;
+    }
+
+    >label {
+        font-size: 1rem;
+        font-weight: 200;
+    }
+
+    .name,
+    .email,
+    .username,
+    .password {
+        padding: .5rem;
+        font-size: 1rem;
+        background: transparent;
+        border-radius: .25rem;
+        background-color: var(--secondary-bg-grey-light);
+
+        width: 100%;
+    }
+
+    .register_btn {
+        padding: .5rem;
+        font-size: 1.2rem;
+        background: transparent;
+        border-radius: .25rem;
+        background-color: var(--tertiary-bg-blue);
+        color: white;
+
+        width: 50%;
+        align-self: center;
+    }
+
+    .register_btn:hover{
+        background-color: var(--hover-bg-blue);
+    }
+
+    .register_text {
+
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+        gap: .25rem;
+
+
+        >a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: .25rem;
+            font-weight: 700;
+
+            >*{
+                transition: all 500ms ease;
+            }
+        }
+
+        >a:hover {
+            text-decoration: underline;
+            
+
+            >* {
+                transform: translateX(5px);
+                transition: all 200ms ease;
+            }
+        }
+    }
+
+}
