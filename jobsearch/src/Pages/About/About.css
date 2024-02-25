@@ -319,10 +319,26 @@
       font-size: 1rem;
     }
 
-    .about_cta_btn{
+    .about_cta_btn {
       max-width: 100%;
       align-items: center;
+      font-size: 1rem;
     }
   }
+
+  .about_faqs {
+    margin-block: 3rem;
+    margin-inline: 0;
+
+    .faq_container{
+      padding: 0 !important;
+
+      /* .faq_section_title{
+        font-size: 1rem !important;
+      } */
+    }
+  }
+
+  
 
 }
