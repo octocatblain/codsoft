@@ -1,4 +1,4 @@
-.about{
+.about {
   padding-inline: 2rem;
 }
 
@@ -187,11 +187,6 @@
   align-items: center;
   line-height: 2;
   background-color: var(--secondary-bg-grey-light);
-  /* background: url("https://images.pexels.com/photos/1000444/pexels-photo-1000444.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"); */
-  /* background-repeat: no-repeat; */
-  /* object-fit: contain; */
-  /* background-position: bottom; */
-  /* filter: brightness(75%); */
 
   >.text {
     font-size: 1.5rem;
@@ -241,7 +236,7 @@
 .about_faqs {
   margin-block: 3rem;
   margin-inline: 4rem;
-  
+
 
   .faq_container {
     padding: 2rem;
@@ -258,42 +253,76 @@
 
 @media screen and (max-width: 787px) {
 
-  .about >*{
+  .about>* {
     flex-direction: column;
   }
 
-  .about_hero{
+  .about_hero {
     flex-direction: column;
     height: max-content !important;
-    
 
 
-    .about_content{
+
+    .about_content {
       padding-inline: 1rem !important;
       padding-block-start: 0 !important;
     }
 
-    .about_image{
+    .about_image {
       width: 300px;
       height: 500px !important;
     }
   }
 
-  .about_story{
+  .about_story {
     display: flex;
     flex-direction: column;
     padding-inline: 0;
 
-    >.title{
-      font-size:2rem;
+    >.title {
+      font-size: 2rem;
       flex-direction: row;
     }
 
-    .about_stats{
+    .about_stats {
       flex-wrap: wrap;
       gap: 1rem;
       display: flex;
     }
   }
-  
+
+  .about_values {
+    padding-inline: 0;
+  }
+
+  .values_content {
+    padding-inline: 0;
+  }
+
+  .about_apart,
+  .about_promise {
+    padding-inline: 0;
+
+    >.text {
+      font-size: 1rem !important;
+    }
+  }
+
+  .about_cta {
+    margin-inline: 0;
+    padding-inline: 1rem;
+    gap: 2rem;
+    justify-content: center;
+
+    >.text {
+
+      font-size: 1rem;
+    }
+
+    .about_cta_btn{
+      max-width: 100%;
+      align-items: center;
+    }
+  }
+
 }
