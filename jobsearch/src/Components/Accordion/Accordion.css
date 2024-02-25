@@ -45,3 +45,20 @@
   line-height: 1.5;
   text-size-adjust: auto;
 }
+
+
+@media screen and (max-width: 787px) {
+  .title {
+    font-size: 1rem;
+
+    >.icon {
+      font-size: 1rem !important;
+    }
+  }
+
+  .content.active {
+    display: block;
+    padding: .75rem !important;
+    font-size: 1rem !important;
+  }
+}
