@@ -28,8 +28,7 @@ const Navbar = () => {
                 <li className="nav_item"><Link to="/contact">Contact</Link></li>
                 <li className="nav_item"><Link to="/login">Login</Link></li>
                 <li className="nav_item"><Link to="/register">Register</Link></li>
-                {isResponsive && (<BiXCircle className="icon close_icon" />)}
-                <BiXCircle className="icon close_icon" onClick={toggleResponsive} />
+                {isResponsive && (<BiXCircle className="icon close_icon" onClick={toggleResponsive} />)}
             </ul>
             <FaBars className="icon menu_icon" onClick={toggleResponsive}/>
 

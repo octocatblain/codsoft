@@ -65,7 +65,8 @@
     .responsive {
         display: flex;
         justify-content: space-between !important;
-        position: relative;
+        position: fixed;
+        
         align-items: center;
         justify-content: center;
         padding: 0.5rem;
@@ -73,6 +74,7 @@
         width: 50dvw;
         height: 50dvh;
         transform: all 200ms translateY(-100px);
+        z-index: 999;
 
         .logo{
             flex: 0 !important;
