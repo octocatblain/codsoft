@@ -34,7 +34,7 @@ const Home = () => {
                 </div>
               </div>
 
-              <p className="text">Are you ready to take the next step in your career journey? Look no further than <span className='job'>Job<span>Search</span></span> – your ultimate destination for finding the perfect job match. <br /><br /><br />Whether you're a seasoned professional or just starting out, <span className='job'>Job<span>Search</span></span> has the tools, resources, and opportunities to propel you towards your dream career.</p>
+              <p className="hero_text text">Are you ready to take the next step in your career journey? Look no further than <span className='job'>Job<span>Search</span></span> – your ultimate destination for finding the perfect job match. <br /><br /><br />Whether you're a seasoned professional or just starting out, <span className='job'>Job<span>Search</span></span> has the tools, resources, and opportunities to propel you towards your dream career.</p>
             </article>
           </div>
         </hero>

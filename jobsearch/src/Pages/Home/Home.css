@@ -124,6 +124,11 @@
 
 @media screen and (max-width: 767px) {
 
+    .hero_content{
+        padding: 0 !important;
+        padding-block: 3rem !important;
+    }
+
     .hero_title {
         display: flex !important;
         flex-direction: column !important;
@@ -134,6 +139,8 @@
 
         >.text {
             text-align: center;
+            display: none;
+
         }
     }
 }

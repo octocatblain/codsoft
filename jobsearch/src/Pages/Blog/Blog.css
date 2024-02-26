@@ -26,7 +26,7 @@
 
     .blog_card {
         margin-block: 1rem;
-        border-bottom: 2px solid var(--tertiary-bg-blue);
+        /* border-bottom: 2px solid var(--tertiary-bg-blue); */
         width: 75%;
         display: flex;
         gap: 1rem;
