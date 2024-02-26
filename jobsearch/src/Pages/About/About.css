@@ -1,3 +1,7 @@
+.about{
+  padding-inline: 2rem;
+}
+
 .about_hero {
   height: calc(100dvh - 50px);
   display: flex;
@@ -13,7 +17,7 @@
     flex-direction: column-reverse;
 
     >.title {
-      font-size: 5rem;
+      font-size: clamp(2rem, 5rem, 3rem );
       color: var(--secondary-clr-midblue);
       font-weight: 200;
     }
@@ -247,4 +251,26 @@
     font-weight: 900;
     padding-block: 1rem;
   }
+}
+
+
+@media screen and (max-width: 787px) {
+
+  .about >*{
+    flex-direction: column;
+  }
+
+  .about_hero{
+    flex-direction: column;
+
+    .about_content{
+      padding-inline: 1rem !important;
+    }
+  }
+
+  .about_story{
+    display: flex;
+    flex-direction: column;
+  }
+  
 }
