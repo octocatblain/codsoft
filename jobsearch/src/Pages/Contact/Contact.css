@@ -138,20 +138,50 @@
 
 
 @media screen and (max-width: 787px) {
+
+    .contact {
+        padding-inline: .75rem;
+        padding-block: 1rem;
+    }
     .contact_section {
         flex-direction: column;
+        flex: 1;
+        width: 100%;
 
         .contact_form {
-            padding: 2rem;
+            flex: 12;
+            width: 100%;
+            padding: 1rem;
             border-bottom-left-radius: inherit;
             border-top-left-radius: inherit;
+
+            .contact_submit{
+                padding: .5rem;
+               
+            
+            }
         }
 
         .contact_info {
+            flex: 1;
             padding: 2rem;
+
             border-bottom-right-radius: inherit;
             border-top-right-radius: inherit;
+
+            >.text{
+                font-size: 1rem;
+            }
         }
     }
+
+    .contact_map {
+    
+        iframe {
+            height: 300px;
+            width: 100%;
+            border-radius: .25rem;
+            box-shadow: 0 0 10px var(--secondary-clr-midblue);
+        }}
     
 }
